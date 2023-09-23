@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="font_family" lang="fa" dir="rtl" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>MovFlix</title>
+    <style>
+       .bg{
+        background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/Top_Gun_Maverick.jpg");
+        background-size: cover;
+       }
+       .bg-1{
+        background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/John_wick_1.jpg");
+        background-size: cover;
+       }
+       .bg-2{
+        background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/Breaking_bad_2.jpg");
+        background-size: cover;
+       }
+       .bg-3{
+        background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/Better_call_saul_main1.jpg");
+        background-size: cover;
+       }
+       .bg-4{
+        background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/ANTMAN_Main.jpeg");
+        background-size: cover;
+       }
+       .bg-5{
+        background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/creed3_main.jpg");
+        background-size: cover;
+       }
+       .bg-6{
+        background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/John_wick_1.jpg");
+        background-size: cover;
+       }
+       .side_shadow{
+        box-shadow: 0 0rem 30rem rgba( 28 , 32 , 35)!important;
+        background-color: #1c2023;
+       }
+       .padd{
+        padding-top: 10rem !important;
+        padding-bottom: 10rem !important;
+       }
+       .dark_back{
+        background-image: url("img/movies/movies.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+        .text-align{
+          text-align: justify;
+        }
+        .divider {
+          width: 100%;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+        }
+        .footer-color{
+          background: #dc3546b0 !important;
+        }
+    </style>
+</head>
+<body data-bs-theme="dark" class="font_family">
+   <!-- <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card text-bg-dark">
+            <img src="img/movies/valid/Top_Gun_Maverick.jpg" class="card-img" alt="..." width="200px" height="200px">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <figure class="figure">
+            <img src="img/digital-product-1-1.jpg" class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>-->
+    <!------------------------------------------------------ HEADER --------------------------------------------------->
+    <header class="p-3 side_shadow">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="img/homepage/Netflix-Logo.wine.svg" class="bi me-2" width="150" height="150" role="img" aria-label="Bootstrap" alt="Netflix_logo"><use xlink:href="#bootstrap"></use>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">خانه</a></li>
+            <li><a href="films.html" class="nav-link px-2 text-secondary">فیلم ها</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">سریال ها</a></li>
+            <li><a href="pricing.html" class="nav-link px-2 text-white">خرید اشتراک</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">درباره ما</a></li>
+          </ul>
+  
+  
+          <div class="text-end">
+            <a href="#"><img class="svg p-1 m-2" src="img/bell.svg" width="40" height="40" alt="bell_icon"></a>
+            <a href="#"><img class="svg p-1 m-2" src="img/icons8-search.svg" width="40" height="40" alt="search_icon"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------------------------------------------------------ HEADER --------------------------------------------------->
+    <div class="container-fluid fixed-bottom p-3 m-3">
+      <div class="row">
+          <div class="col-9 col-md-3 col-lg-2 btn btn-primary">
+              <div class="modal-dialog" style="direction: rtl;">
+                  <div class="modal-content rounded-3">
+                  <div class="modal-body p-4 text-center">
+                      <h5 class="mb-0">این وبسایت از کوکی استفاده می کند.</h5>
+                  </div>
+                  <div class="modal-footer flex-nowrap p-0">
+                      <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0"><strong>بله تمام کوکی ها را می پذیرم.</strong></button>
+                      <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">خیر کوکی ها را نمی پذیرم</button>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12">
+              
+          </div>
+          <div class="col-12">
+              
+          </div>
+          <div class="col-12">
+              
+          </div>
+      </div>
+    </div>
+         <!------------------------------------------------------ BODY OR SOMETHING --------------------------------------------------->
+<div class="container-fluid">
+
+  <div class="row">
+      <div class="col-12 col-sm-8 col-md-9">
+            <div class="container my-5">
+                <div class="p-5 text-center bg-body-tertiary rounded-3">
+                <img src="img/homepage/IMDb-Logo.wine.png" class="bi mt-4 mb-3" width="130" height="100">
+                <h1 class="fw-bolder pb-3">لیست فیلم های برتر IMDB</h1>
+                </div>
+            </div>
+            <div class="container-fluid col-xxl-8 px-4 py-5 font_family">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="img/imdb_list/shawshank.jpg" class="d-block mx-lg-auto img-fluid rounded-4" alt="Shawshank" width="450" height="350" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Shawshank Redemption</h1>
+                    <p class="lead text-align">در سال ۱۹۴۶ اندی دوفرسن بانکدار نیو انگلندی که مردی معقول و متعادل است به اتهام قتل همسرو دوستش محکوم به حبس ابد درزندان شائوشنک می شود. پس از چندی در فعالیتهای غیر غانونی مالی با رئییس زندان همکاری کرده ودرعین حال برای خودش هم حسابی با یک شریک .</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">ادامه و تماشا</button>
+                    <button type="button" class="btn btn-outline-warning btn-lg px-4">9.2</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg px-4">#1</button>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="img/imdb_list/darkknight.jpg" class="d-block mx-lg-auto img-fluid rounded-4" alt="Batman" width="450" height="350" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">The Dark Knight</h1>
+                    <p class="lead text-align">بتمن به کمک سرگرد جیم گوردون و دادستان جدید هاروی دنت، شهر را از وجود آخرین خانواده‌های تبهکاری پاک می کند. همکاری این سه نفر ظاهرا موثر واقع میشود، اما طولی نمی کشد که خود را در مقابل هرج و مرج های یک تبهکار نو پا بنام جوکر، عاجز می بینند.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">ادامه و تماشا</button>
+                    <button type="button" class="btn btn-outline-warning btn-lg px-4">9.1</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg px-4">#2</button>
+                    </div>
+                </div>
+                </div>
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="img/imdb_list/darkknight.jpg" class="d-block mx-lg-auto img-fluid rounded-4" alt="Bootstrap Themes" width="450" height="350" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">The Dark Knight</h1>
+                        <p class="lead text-align">بتمن به کمک سرگرد جیم گوردون و دادستان جدید هاروی دنت، شهر را از وجود آخرین خانواده‌های تبهکاری پاک می کند. همکاری این سه نفر ظاهرا موثر واقع میشود، اما طولی نمی کشد که خود را در مقابل هرج و مرج های یک تبهکار نو پا بنام جوکر، عاجز می بینند.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">ادامه و تماشا</button>
+                        <button type="button" class="btn btn-outline-warning btn-lg px-4">9.1</button>
+                        <button type="button" class="btn btn-outline-danger btn-lg px-4">#2</button>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+           
+      </div>
+      
+      <!------------------------------------------------------ SIDE SECTION --------------------------------------------------->
+      <div class="col-12 col-sm-4 col-md-3 side_shadow rounded">
+        <h2 class="pb-3 mt-5 border-bottom text-center fw-bolder text-danger">منو</h2>
+          <div class="my-3 p-3">
+            <h5 class="border-bottom pb-2 mb-0 fw-bolder">حساب</h5>
+            <div class="d-flex text-body-secondary pt-3">
+              <img src="img/homepage/netflix_white.png" alt="prof_pic" class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="50" height="50" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em"></text>
+              <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                <div class="d-flex justify-content-between">
+                  <h3 class="text-white fw-bolder">رضا هاشمی</h3>
+                  <a href="#"><img class="img svg" src="img/more.png" width="20" height="20" alt="more_icon"></a>
+                </div>
+                <span class="d-block text-light">blackburnkoper@gmail.com</span>
+              </div>
+            </div>
+            <h2 class="pb-3 mt-5 text-center fw-bolder text-danger">سریال های بروز شده</h2>
+            <div class="col-md-12">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <a href="#" class="text-decoration-none"><div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger fw-bolder">جدید</strong>
+                  <h3 class="mb-0 fw-bolder">Peaky Blinders</h3>
+                  <div class="mb-1 text-muted fw-bolder">۳۰ آپریل</div>
+                  <p class="card-text mb-auto fw-bolder">فصل ۶ قسمت ۵</p>
+                  <a href="#" class="fw-bolder text-decoration-none text-warning align-items-center">&bigstar;۸.۸</a>
+                  <a href="#" class="fw-bolder text-decoration-none text-primary">۵۵ دقیقه</a>
+                </div></a>
+                <div class="col-auto col-lg-auto d-none d-md-block">
+                  <img src="img/side_pics/peakyBlinders.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="series_pic"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+        
+                </div>
+              </div>
+            </div>  
+            <div class="col-md-12">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <a href="#" class="text-decoration-none"><div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger fw-bolder">جدید</strong>
+                  <h3 class="mb-0 fw-bolder">Succession</h3>
+                  <div class="mb-1 text-muted fw-bolder">۳۰ آپریل</div>
+                  <p class="card-text mb-auto fw-bolder">فصل ۸ قسمت ۸</p>
+                  <a href="#" class="fw-bolder text-decoration-none text-warning align-items-center">&bigstar;۸.۴</a>
+                  <a href="#" class="fw-bolder text-decoration-none text-primary">۶۰ دقیقه</a>
+                </div></a>
+                <div class="col-auto col-lg-auto d-none d-md-block">
+                  <img src="img/side_pics/succession.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="series_pic"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+        
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <a href="#" class="text-decoration-none"><div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger fw-bolder">جدید</strong>
+                  <h3 class="mb-0 fw-bolder">Mr.Robot</h3>
+                  <div class="mb-1 text-muted fw-bolder">۳۰ آپریل</div>
+                  <p class="card-text mb-auto fw-bolder">فصل ۴ قسمت ۱۲</p>
+                  <a href="#" class="fw-bolder text-decoration-none text-warning align-items-center">&bigstar;۸.۷</a>
+                  <a href="#" class="fw-bolder text-decoration-none text-primary">۵۸ دقیقه</a>
+                </div></a>
+                <div class="col-auto col-lg-auto d-none d-md-block">
+                  <img src="img/side_pics/mr.robot.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="series_pic"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                </div>
+              </div>
+            </div>
+            <h2 class="pb-3 mt-5 text-center fw-bolder text-danger">به تماشا ادامه دهید</h2>
+            <div class="col-md-12">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <a href="#" class="text-decoration-none"><div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger fw-bolder">درحال تماشا</strong>
+                  <h3 class="mb-0 fw-bolder">The Boys</h3>
+                  <div class="mb-1 text-muted fw-bolder">۳۰ آپریل</div>
+                  <p class="card-text mb-auto fw-bolder pb-2">فصل ۳ قسمت ۵</p>
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 65%"></div>
+                  </div>
+                  <a href="#" class="fw-bolder text-decoration-none text-warning align-items-center pt-2">&bigstar;۸.۲</a>
+                  <a href="#" class="fw-bolder text-decoration-none text-primary">۵۵ دقیقه</a>
+                </div></a>
+                <div class="col-auto col-lg-auto d-none d-md-block">
+                  <img src="img/side_pics/theboys.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="series_pic"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+        
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <a href="#" class="text-decoration-none"><div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger fw-bolder">درحال تماشا</strong>
+                  <h3 class="mb-0 fw-bolder">The Dark Knight</h3>
+                  <div class="mb-1 text-muted fw-bolder">جولای ۱۶</div>
+                  <p class="card-text mb-auto fw-bolder pb-2"></p>
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 32%"></div>
+                  </div>
+                  <a href="#" class="fw-bolder text-decoration-none text-warning align-items-center pt-2">&bigstar;۹.۱</a>
+                  <a href="#" class="fw-bolder text-decoration-none text-primary">۲ ساعت و ۳۰ دقیقه</a>
+                </div></a>
+                <div class="col-auto col-lg-auto d-none d-md-block">
+                  <img src="img/side_pics/darkKnight.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" alt="series_pic"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!------------------------------------------------------ SIDE SECTION --------------------------------------------------->
+
+      <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#b02a37" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,144C1120,107,1280,85,1360,74.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#b02a37" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,144C1120,107,1280,85,1360,74.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+      </svg>-->
+  </div>
+  
+  
+</div>
+
+<div class="container">
+    <nav>
+           <ul class="pagination pagination-lg">
+             <li class="page-item active" aria-current="page">
+               <span class="page-link">۱</span>
+             </li>
+             <li class="page-item"><a class="page-link" href="#">۲</a></li>
+             <li class="page-item"><a class="page-link" href="#">۳</a></li>
+             <li class="page-item"><a class="page-link" href="#">۴</a></li>
+             <li class="page-item"><a class="page-link" href="#">۵</a></li>
+             <li class="page-item"><a class="page-link" href="#">۶</a></li>
+             <li class="page-item"><a class="page-link" href="#">۷</a></li>
+             <li class="page-item"><a class="page-link" href="#">۸</a></li>
+             <li class="page-item"><a class="page-link" href="#">۹</a></li>
+
+           </ul>
+         </nav>
+ </div>
+<div class="divider"></div>
+
+    <!------------------------------------------------------ BODY OR SOMETHING --------------------------------------------------->
+    <div class="text-secondary text-center dark_back padd">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white visually-hidden">Dark mode hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4 visually-hidden">Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and
+            mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold visually-hidden">Custom button</button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4 visually-hidden">Secondary</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#dc3546b0" fill-opacity="1" d="M0,160L60,133.3C120,107,240,53,360,64C480,75,600,149,720,197.3C840,245,960,267,1080,256C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+      </svg>
+      <div class="container-fluid bg-danger footer-color">
+        <footer class="">
+          <div class="row">
+            <div class="col-6 col-md-2">
+              <h5>منو</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">خانه</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">۲۵۰ فیلم برتر تاریخ</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">۲۵۰ سریال برتر تاریخ</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">فیلم های پرطرفدار</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">درباره ما</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5></h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5></h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>عضو خبر نامه ما شوید.</h5>
+                <p>وقتی فیلم یا سریال جدیدی منتشر شد اولین کسی باشید که خبردار می شوید.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">آدرس ایمیل</label>
+                  <input id="newsletter1" type="text" class="form-control text-bg-dark" placeholder="آدرس ایمیل">
+                  <button class="btn btn-primary" type="button">عضو</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+            <p>© 2023 Company, Inc. تام حقوق محفوظ است.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script src="js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+    <script src="js/sidebars.js"></script>
+</body>
+</html>
