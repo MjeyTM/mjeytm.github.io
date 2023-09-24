@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="font_family" lang="fa" dir="rtl" data-bs-theme="light">
+<html class="font_family" lang="fa" dir="ltr" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
-    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>MovFlix</title>
+    <title>Checkout</title>
     <style>
        .bg{
         background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/Top_Gun_Maverick.jpg");
@@ -73,21 +73,21 @@
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="img/homepage/Netflix-Logo.wine.svg" class="bi me-2" width="150" height="150" role="img" aria-label="Bootstrap" alt="Netflix_logo"><use xlink:href="#bootstrap"></use>
+            <img src="img/homepage/Netflix-Logo.wine.svg" class="bi me-2" width="150" height="150" role="img" alt="Netflix_logo">
           </a>
-  
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="nav-link px-2 text-secondary">خانه</a></li>
-            <li><a href="films.html" class="nav-link px-2 text-white">فیلم ها</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">سریال ها</a></li>
-            <li><a href="pricing.html" class="nav-link px-2 text-white">خرید اشتراک</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">درباره ما</a></li>
+            <li><a href="index.html" class="nav-link px-2 text-secondary fw-bold">Home</a></li>
+            <li><a href="films.html" class="nav-link px-2 text-white fw-bold">Movies</a></li>
+            <li><a href="#" class="nav-link px-2 text-white fw-bold">Series</a></li>
+            <li><a href="#" class="nav-link px-2 text-white fw-bold">Login</a></li>
+            <li><a href="blog.html" class="nav-link px-2 text-white fw-bold">Blog</a></li>
+            <li><a href="pricing.html" class="nav-link px-2 text-white fw-bold">Subscribtion</a></li>
+            <li><a href="#" class="nav-link px-2 text-white fw-bold">About us</a></li>
           </ul>
-  
-  
-          <div class="text-end">
+          <div class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
             <a href="#"><img class="svg p-1 m-2" src="img/bell.svg" width="40" height="40" alt="bell_icon"></a>
             <a href="#"><img class="svg p-1 m-2" src="img/icons8-search.svg" width="40" height="40" alt="search_icon"></a>
+            <a href="#"><img class="svg p-1 m-2" src="img/login.png" width="40" height="40" alt="search_icon"></a>
           </div>
         </div>
       </div>
@@ -100,159 +100,156 @@
         <main>
           <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="img/homepage/Netflix-Logo.wine.svg" alt="" width="200" height="100">
-            <h1 class="fw-bolder pb-2">درگاه پرداخت</h1>
-            <p class="lead">سبد خرید خود را بررسی نموده و اطلاعات خود را جهت پرداخت وارد نمایید.</p>
+            <h1 class="fw-bolder pb-2">PAYMENT</h1>
+            <p class="lead">Check your shopping cart and enter your information for payment.</p>
           </div>
       
           <div class="row g-5">
             <div class="col-md-5 col-lg-4 order-md-last">
               <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-primary">سبد خرید شما</span>
+                <span class="text-primary">Your cart</span>
                 <span class="badge bg-primary rounded-pill">۱</span>
               </h4>
               <ul class="list-group mb-3">
                 <li class="list-group-item d-flex justify-content-between lh-sm">
                   <div>
-                    <h6 class="my-0">اسم محصول</h6>
-                    <small class="text-body-secondary">اشتراک نامحدود</small>
+                    <h6 class="my-0">Product name</h6>
+                    <small class="text-body-secondary">Unlimited Subscribtion</small>
                   </div>
-                  <span class="text-body-secondary">۶۰ هزار تومان</span>
+                  <span class="text-body-secondary">90$</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
                   <div class="text-success">
-                    <h6 class="my-0">کد تخفیف</h6>
-                    <small>کدی وجود ندارد</small>
+                    <h6 class="my-0">Discount code</h6>
+                    <small>There is not any code here</small>
                   </div>
-                  <span class="text-success">۰ تومان</span>
+                  <span class="text-success">90$</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
-                  <span>مجموع</span>
-                  <strong>۶۰ هزار تومان</strong>
+                  <span>Total</span>
+                  <strong>90$</strong>
                 </li>
               </ul>
       
               <form class="card p-2">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="کد تخفیف">
-                  <button type="submit" class="btn btn-secondary">بررسی</button>
+                  <input type="text" class="form-control" placeholder="Discount code">
+                  <button type="submit" class="btn btn-secondary">Check</button>
                 </div>
               </form>
             </div>
             <div class="col-md-7 col-lg-8">
-              <h4 class="mb-3">آدرس محل سکونت</h4>
+              <h4 class="mb-3">Billing Address</h4>
               <form class="needs-validation" novalidate="">
                 <div class="row g-3">
                   <div class="col-sm-6">
-                    <label for="firstName" class="form-label">اسم</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <label for="firstName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your First name" value="" required="">
                     <div class="invalid-feedback">
-                      اسم اول متعارفی وارد نمایید
+                      
                     </div>
                   </div>
       
                   <div class="col-sm-6">
-                    <label for="lastName" class="form-label">فامیلی</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your Last name" value="" required="">
                     <div class="invalid-feedback">
-                      فامیلی مناسبی وارد نمایید
+                      
                     </div>
                   </div>
       
                   <div class="col-12">
-                    <label for="username" class="form-label">نام کاربری</label>
+                    <label for="username" class="form-label">Username</label>
                     <div class="input-group has-validation">
                       <span class="input-group-text">@</span>
-                      <input type="text" class="form-control" id="username" placeholder="نام کاربری" required="">
+                      <input type="text" class="form-control" id="username" placeholder="Username" required="">
                     <div class="invalid-feedback">
-                        نام کاربری شما الزامی است
+                        Userename is required
                       </div>
                     </div>
                   </div>
       
                   <div class="col-12">
-                    <label for="email" class="form-label">ایمیل <span class="text-body-secondary">(اختیاری)</span></label>
+                    <label for="email" class="form-label">Email<span class="text-body-secondary">(Optional)</span></label>
                     <input type="email" class="form-control" id="email" placeholder="you@example.com">
                     <div class="invalid-feedback">
-                      لطفا آدرس ایمیل معتبری را وارد نمایید
+                      Please Enter a Valid Email Address
                     </div>
                   </div>
       
                   <div class="col-12">
-                    <label for="address" class="form-label">آدرس</label>
-                    <input type="text" class="form-control" id="address" placeholder="خیابان ۱۵ خرداد" required="">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Wall ST" required="">
                     <div class="invalid-feedback">
-                      لطفا آدرس تحویل را بدرستی وارد کنید
+                      Adress is required
                     </div>
                   </div>
-      
-                  <div class="col-12">
-                    <label for="address2" class="form-label">آدرس ۲<span class="text-body-secondary">(اختیاری)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="">
-                  </div>
-      
                   <div class="col-md-5">
-                    <label for="country" class="form-label">کشور</label>
+                    <label for="country" class="form-label">Country</label>
                     <select class="form-select" id="country" required="">
-                      <option value="">انتخاب...</option>
-                      <option>ایران</option>
+                      <option value="">Choose</option>
+                      <option>Argentina - LM7</option>
+                      <option>Afghanistan</option>
+                      <option>Armenia</option>
+                      <option>Algeria</option>
+                      <option>Pakistan</option>
+                      <option>Iraq</option>
+                      <option>Porgtual - SIUUUU</option>
+                      <option>Ukraine</option>
+                      <option>Netherland</option>
+                      <option>France</option>
+                      <option>Iran</option>
+                      <option>Russia</option>
+                      <option>USA</option>
+                      <option>UK</option>
+                      <option>Spain</option>
+                      <option>Other countries that i cant remember right now as an asian</option>
                     </select>
                     <div class="invalid-feedback">
-                      لطفا اسم کشور معتبری را وارد نمایید
+                      Please choose a valid country
                     </div>
                   </div>
       
                   <div class="col-md-4">
-                    <label for="state" class="form-label">شهرستانe</label>
+                    <label for="state" class="form-label">City</label>
                     <select class="form-select" id="state" required="">
-                      <option value="">انتخاب...</option>
-                      <option>نیاوران</option>
+                      <option value="">Choose...</option>
+                      <option>My city</option>
                     </select>
                     <div class="invalid-feedback">
-                      لطفا اسم درست شهرستان و یا محله ای را انتخاب کنید
+                      City is required
                     </div>
                   </div>
       
                   <div class="col-md-3">
-                    <label for="zip" class="form-label">کد پستی</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <label for="zip" class="form-label">ZIP Code</label>
+                    <input type="text" class="form-control" id="zip" placeholder="6969" required="">
                     <div class="invalid-feedback">
-                      کد پستی الزامی است
+                      ZIP Code is required
                     </div>
                   </div>
                 </div>
-      
                 <hr class="my-4">
-      
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="same-address">
-                  <label class="form-check-label" for="same-address">آدرس تحویل مرسوله با آدرس محل سکونت یکسان است</label>
-                </div>
-      
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="save-info">
-                  <label class="form-check-label" for="save-info">این اطلاعات را برای دفعه بعد ذخیره کن</label>
+                  <label class="form-check-label" for="save-info">Save this information for later</label>
                 </div>
-      
                 <hr class="my-4">
       
-                <h4 class="mb-3">نوع پرداخت</h4>
+                <h4 class="mb-3">Payment type</h4>
       
                 <div class="my-3">
                   <div class="form-check">
                     <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                    <label class="form-check-label" for="credit">شبکه شتاب</label>
+                    <label class="form-check-label" for="credit">Paypal</label>
                   </div>
                   <div class="form-check">
                     <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                    <label class="form-check-label" for="debit">زرین پال</label>
-                  </div>
-                  <div class="form-check">
-                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-                    <label class="form-check-label" for="paypal">پرداخت در محل</label>
+                    <label class="form-check-label" for="debit">Bitcoin</label>
                   </div>
                 </div>
                 <hr class="my-4">
-                <button class="w-100 btn btn-primary btn-lg" type="submit">ادامه پرداخت</button>
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue Payment</button>
               </form>
             </div>
           </div>
@@ -267,13 +264,13 @@
       <footer class="">
         <div class="row">
           <div class="col-6 col-md-2">
-            <h5>منو</h5>
+            <h5>Menu</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">خانه</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">۲۵۰ فیلم برتر تاریخ</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">۲۵۰ سریال برتر تاریخ</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">فیلم های پرطرفدار</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">درباره ما</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">250 Top movies of all time</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">250 Top series of all time</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Popular Movies</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About us</a></li>
             </ul>
           </div>
     
@@ -301,19 +298,19 @@
     
           <div class="col-md-5 offset-md-1 mb-3">
             <form>
-              <h5>عضو خبر نامه ما شوید.</h5>
-              <p>وقتی فیلم یا سریال جدیدی منتشر شد اولین کسی باشید که خبردار می شوید.</p>
+              <h5>Join MovFlix's newsletter</h5>
+              <p>Be the first to know when a new movie or series is released.</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">آدرس ایمیل</label>
-                <input id="newsletter1" type="text" class="form-control text-bg-dark" placeholder="آدرس ایمیل">
-                <button class="btn btn-primary" type="button">عضو</button>
+                <label for="newsletter1" class="visually-hidden">Email Address</label>
+                <input id="newsletter1" type="text" class="form-control text-bg-dark" placeholder="Email Address">
+                <button class="btn btn-primary" type="button" id="news">Join</button>
               </div>
             </form>
           </div>
         </div>
     
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
-            <p>© 2023 Company, Inc. تام حقوق محفوظ است.</p>
+          <p>© 2023 Company, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
             <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
