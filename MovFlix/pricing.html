@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="font_family" lang="fa" dir="rtl" data-bs-theme="light">
+<html class="font_family" lang="eng" dir="ltr" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
-    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>خرید اشتراک مووفلیکس</title>
+    <title>Buy MovFlix's Subscription</title>
     <style>
        .bg{
         background: linear-gradient(to top, #202020e7, #f0ecec0c), url("img/movies/Top_Gun_Maverick.jpg");
@@ -72,37 +72,37 @@
     <header class="p-3 side_shadow">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="img/homepage/Netflix-Logo.wine.svg" class="bi me-2" width="150" height="150" role="img" aria-label="Bootstrap" alt="Netflix_logo"><use xlink:href="#bootstrap"></use>
+          <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="img/homepage/Netflix-Logo.wine.svg" class="bi me-2" width="150" height="150" role="img" alt="Netflix_logo">
           </a>
-  
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="nav-link px-2 text-white">خانه</a></li>
-            <li><a href="films.html" class="nav-link px-2 text-white">فیلم ها</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">سریال ها</a></li>
-            <li><a href="pricing.html" class="nav-link px-2 text-secondary">خرید اشتراک</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">درباره ما</a></li>
+            <li><a href="index.html" class="nav-link px-2 text-secondary fw-bold">Home</a></li>
+            <li><a href="films.html" class="nav-link px-2 text-white fw-bold">Movies</a></li>
+            <li><a href="#" class="nav-link px-2 text-white fw-bold">Series</a></li>
+            <li><a href="#" class="nav-link px-2 text-white fw-bold">Login</a></li>
+            <li><a href="blog.html" class="nav-link px-2 text-white fw-bold">Blog</a></li>
+            <li><a href="pricing.html" class="nav-link px-2 text-white fw-bold">Subscribtion</a></li>
+            <li><a href="#" class="nav-link px-2 text-white fw-bold">About us</a></li>
           </ul>
-  
-          <div class="text-end">
+          <div class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
             <a href="#"><img class="svg p-1 m-2" src="img/bell.svg" width="40" height="40" alt="bell_icon"></a>
             <a href="#"><img class="svg p-1 m-2" src="img/icons8-search.svg" width="40" height="40" alt="search_icon"></a>
+            <a href="#"><img class="svg p-1 m-2" src="img/login.png" width="40" height="40" alt="search_icon"></a>
           </div>
         </div>
       </div>
     </header>
-    <div class="divider"></div>
     <div class="container-fluid fixed-bottom p-3 m-3">
       <div class="row">
-          <div class="col-9 col-md-3 col-lg-2 btn btn-primary">
+          <div class="col-9 col-md-3 col-lg-2 btn btn-danger" style="background: linear-gradient(to top, #aa3b3be7, #d1323249);">
               <div class="modal-dialog" style="direction: rtl;">
                   <div class="modal-content rounded-3">
                   <div class="modal-body p-4 text-center">
-                      <h5 class="mb-0">این وبسایت از کوکی استفاده می کند.</h5>
+                      <h5 class="mb-0 fw-bold">This Web site uses Cookies</h5>
                   </div>
                   <div class="modal-footer flex-nowrap p-0">
-                      <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0"><strong>بله تمام کوکی ها را می پذیرم.</strong></button>
-                      <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">خیر کوکی ها را نمی پذیرم</button>
+                      <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 text-white" id="correct"><strong>Accept</strong></button>
+                      <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 text-white" data-bs-dismiss="modal" id="incorrect">Decline</button>
                   </div>
                   </div>
               </div>
@@ -122,7 +122,7 @@
     <div class="container-fluid my-5">
         <div class="p-5 text-center bg-body-tertiary rounded-3 dark_back">
           
-          <h1 class="fw-bolder pb-3 m-5">پلنینگ های اشتراک MovFlix</h1>
+          <h1 class="fw-bolder pb-3 m-5">MovFlix Subscription Plans</h1>
         </div>
     </div>
     <div class="container pt-5">
@@ -132,57 +132,57 @@
                   <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm" style="border-color: #dc3545;">
                       <div class="card-header py-3 bg-danger" style="border-color: #dc3545;">
-                        <h4 class="my-0 fw-normal">رایگان</h4>
+                        <h4 class="my-0 fw-normal">Free</h4>
                       </div>
                       <div class="card-body">
-                        <h1 class="card-title pricing-card-title text-white">۰ تومان<small class="text-body-secondary fw-light"> در ماه</small></h1>
+                        <h1 class="card-title pricing-card-title text-white">0$<small class="text-body-secondary fw-light"></small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                          <li>تک کاربره</li>
-                          <li>۲۰ گیگ محدودیت دانلود در ماه</li>
-                          <li>بدون تماشای آنلاین</li>
-                          <li>بدون پشتییانی</li>
+                          <li>Single User</li>
+                          <li>20 GB Download Limit Per Month</li>
+                          <li>Watch Offline</li>
+                          <li>No Support</li>
                         </ul>
-                        <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-danger fw-bolder">ثبت نام رایگان</button></a>
+                        <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-danger fw-bolder">Free Sign Up</button></a>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm" style="border-color: #0d6efd;">
                       <div class="card-header py-3 bg-primary" style="border-color: #0d6efd;">
-                        <h4 class="my-0 fw-normal">نامحدود</h4>
+                        <h4 class="my-0 fw-normal">Unlimited</h4>
                       </div>
                       <div class="card-body">
-                        <h1 class="card-title pricing-card-title text-white">۳۰ هزار تومان<small class="text-body-secondary fw-light"> در ماه</small></h1>
+                        <h1 class="card-title pricing-card-title text-white">9.98$<small class="text-body-secondary fw-light">Per Month</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                          <li>تا ۵ کاربر</li>
-                          <li>۱۵۰ گیگ محدودیت دانلود در ماه</li>
-                          <li>با تماشای آنلاین</li>
-                          <li>پشتییانی دارد</li>
+                          <li>Up To 5 Users</li>
+                          <li>150 GB Download Limit Per Month</li>
+                          <li>Watch Online</li>
+                          <li>Support</li>
                         </ul>
-                        <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-primary fw-bolder">خرید</button></a>
+                        <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-primary fw-bolder">Buy</button></a>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm" style="border-color: #198754;">
                       <div class="card-header py-3 bg-success" style="border-color: #198754;">
-                        <h4 class="my-0 fw-normal">نامحدود</h4>
+                        <h4 class="my-0 fw-normal">Unlimited</h4>
                       </div>
                       <div class="card-body">
-                        <h1 class="card-title pricing-card-title text-white">۶۰ هزار تومن<small class="text-body-secondary fw-light"> در ماه</small></h1>
+                        <h1 class="card-title pricing-card-title text-white">39.99$<small class="text-body-secondary fw-light">Per Month</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                          <li>تا ۱۰ کاربر</li>
-                          <li>دانلود نامحدود</li>
-                          <li>با تماشای آنلاین و فلیکس پلاس</li>
-                          <li>پشتییانی دارد</li>
+                          <li>Up To 10 Users</li>
+                          <li>Unlimited Download</li>
+                          <li>Watch Online & Flix Plus</li>
+                          <li>Support</li>
                         </ul>
-                        <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-success fw-bolder">خرید</button></a>
+                        <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-success fw-bolder">Buy</button></a>
                       </div>
                     </div>
                   </div>
                 </div>
             
-                <h2 class="display-6 text-center mb-4">مقایسه پلن ها</h2>
+                <h2 class="display-6 text-center mb-4 fw-blod">Compare Plans</h2>
             
                 <div class="table-responsive pb-5">
                   <table class="table text-center">
@@ -202,7 +202,7 @@
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
                       </tr>
                       <tr>
-                        <th scope="row" class="text-start">تماشای آنلاین</th>
+                        <th scope="row" class="text-start">Watch Online</th>
                         <td></td>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
@@ -211,19 +211,19 @@
             
                     <tbody>
                       <tr>
-                        <th scope="row" class="text-start">دسترسی به تمام محتواها</th>
+                        <th scope="row" class="text-start">Access To All Contents</th>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
                       </tr>
                       <tr>
-                        <th scope="row" class="text-start">دانلود نامحدود</th>
+                        <th scope="row" class="text-start">Unlimited Download</th>
                         <td></td>
                         <td></td>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
                       </tr>
                       <tr>
-                        <th scope="row" class="text-start">چند کاربره بودن</th>
+                        <th scope="row" class="text-start">Multiple User</th>
                         <td></td>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
                         <td><img class="svg" width="20" height="20" src="img/check-logo.png" alt="check_icon"></td>
@@ -248,13 +248,13 @@
         <footer class="">
           <div class="row">
             <div class="col-6 col-md-2">
-              <h5>منو</h5>
+              <h5>Menu</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">خانه</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">۲۵۰ فیلم برتر تاریخ</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">۲۵۰ سریال برتر تاریخ</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">فیلم های پرطرفدار</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">درباره ما</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">250 Top movies of all time</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">250 Top series of all time</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Popular Movies</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About us</a></li>
               </ul>
             </div>
       
@@ -282,19 +282,19 @@
       
             <div class="col-md-5 offset-md-1 mb-3">
               <form>
-                <h5>عضو خبر نامه ما شوید.</h5>
-                <p>وقتی فیلم یا سریال جدیدی منتشر شد اولین کسی باشید که خبردار می شوید.</p>
+                <h5>Join MovFlix's newsletter</h5>
+                <p>Be the first to know when a new movie or series is released.</p>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">آدرس ایمیل</label>
-                  <input id="newsletter1" type="text" class="form-control text-bg-dark" placeholder="آدرس ایمیل">
-                  <button class="btn btn-primary" type="button">عضو</button>
+                  <label for="newsletter1" class="visually-hidden">Email Address</label>
+                  <input id="newsletter1" type="text" class="form-control text-bg-dark" placeholder="Email Address">
+                  <button class="btn btn-primary" type="button" id="news">Join</button>
                 </div>
               </form>
             </div>
           </div>
       
           <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
-            <p>© 2023 Company, Inc. تام حقوق محفوظ است.</p>
+            <p>© 2023 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
